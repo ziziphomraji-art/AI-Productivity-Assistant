@@ -8,7 +8,7 @@ import {
   MessagesSquare,
   Menu,
   X,
-  Sparkles,
+  Soup,
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
@@ -48,13 +48,13 @@ function Brand() {
   return (
     <div className="flex items-center gap-2.5 px-1">
       <span className="grid size-9 place-items-center rounded-lg gradient-hero text-primary-foreground">
-        <Sparkles className="size-4" />
+        <Soup className="size-4" />
       </span>
       <span className="leading-tight">
         <span className="block font-display text-sm font-semibold text-sidebar-foreground">
-          Workplace AI
+          Community Kitchen Soup
         </span>
-        <span className="block text-xs text-sidebar-foreground/60">Productivity Assistant</span>
+        <span className="block text-xs text-sidebar-foreground/60">AI Kitchen Assistant</span>
       </span>
     </div>
   );
