@@ -6,13 +6,13 @@ import { ToolWorkspace } from "@/components/ToolWorkspace";
 export const Route = createFileRoute("/email")({
   head: () => ({
     meta: [
-      { title: "Smart Email Generator — Workplace AI" },
+      { title: "Smart Email Generator — Community Kitchen Soup" },
       {
         name: "description",
         content:
           "Draft professional workplace emails in seconds with structured AI prompts and fully editable output.",
       },
-      { property: "og:title", content: "Smart Email Generator — Workplace AI" },
+      { property: "og:title", content: "Smart Email Generator — Community Kitchen Soup" },
       {
         property: "og:description",
         content: "Generate clear, on-tone work emails with AI and edit them before sending.",

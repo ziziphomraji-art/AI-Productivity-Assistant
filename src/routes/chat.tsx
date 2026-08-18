@@ -13,13 +13,13 @@ import { runAssistant } from "@/lib/ai.functions";
 export const Route = createFileRoute("/chat")({
   head: () => ({
     meta: [
-      { title: "AI Chatbot — Workplace AI" },
+      { title: "AI Chatbot — Community Kitchen Soup" },
       {
         name: "description",
         content:
           "Chat with an AI workplace assistant about emails, meetings, planning, and everyday work questions.",
       },
-      { property: "og:title", content: "AI Chatbot — Workplace AI" },
+      { property: "og:title", content: "AI Chatbot — Community Kitchen Soup" },
       {
         property: "og:description",
         content: "A conversational AI assistant for everyday workplace tasks.",
