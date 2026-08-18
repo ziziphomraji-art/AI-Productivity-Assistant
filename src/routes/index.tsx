@@ -6,18 +6,20 @@ import { AiDisclaimer, AppShell } from "@/components/AppShell";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AI Workplace Productivity Assistant" },
+      { title: "Community Kitchen Soup — AI Kitchen Assistant" },
       {
         name: "description",
         content:
-          "Automate workplace tasks with AI: draft emails, summarize meetings, plan work, research topics, and chat with an assistant.",
+          "AI tools for the Community Kitchen Soup team: draft emails to donors, summarize volunteer meetings, plan service days, research programmes, and chat.",
       },
-      { property: "og:title", content: "AI Workplace Productivity Assistant" },
+      { property: "og:title", content: "Community Kitchen Soup — AI Kitchen Assistant" },
       {
         property: "og:description",
         content:
-          "Five AI tools for professionals: email drafting, meeting summaries, task planning, research, and chat.",
+          "Five AI tools for community kitchen teams: email drafting, meeting summaries, task planning, research, and chat.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -28,31 +30,31 @@ const TOOLS = [
     to: "/email" as const,
     icon: Mail,
     title: "Smart Email Generator",
-    body: "Turn a few bullet points into a polished, on-tone work email.",
+    body: "Turn a few bullet points into a warm email to donors, partners, or volunteers.",
   },
   {
     to: "/notes" as const,
     icon: FileText,
     title: "Meeting Notes Summarizer",
-    body: "Convert messy notes into decisions, action items, and owners.",
+    body: "Turn volunteer meeting notes into decisions, action items, and owners.",
   },
   {
     to: "/planner" as const,
     icon: ListChecks,
     title: "AI Task Planner",
-    body: "Break a goal into a prioritized, time-boxed plan you can ship.",
+    body: "Plan a service day, food drive, or roster into clear, time-boxed steps.",
   },
   {
     to: "/research" as const,
     icon: Search,
     title: "AI Research Assistant",
-    body: "Structured briefings with uncertain claims clearly flagged.",
+    body: "Briefings on funding, nutrition, and food safety with uncertainty flagged.",
   },
   {
     to: "/chat" as const,
     icon: MessagesSquare,
     title: "AI Chatbot",
-    body: "Ask follow-up questions in a full conversational assistant.",
+    body: "Ask follow-up questions about running the kitchen, day to day.",
   },
 ];
 
@@ -61,14 +63,14 @@ function Index() {
     <AppShell>
       <section className="gradient-hero mb-8 rounded-2xl p-8 text-primary-foreground sm:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.16em] opacity-80">
-          Workplace AI Suite
+          Community Kitchen Soup
         </p>
         <h1 className="mt-3 max-w-2xl text-3xl font-semibold sm:text-4xl">
-          Automate the busywork. Keep the judgement.
+          Less paperwork. More bowls served.
         </h1>
         <p className="mt-3 max-w-xl text-sm leading-relaxed opacity-90">
-          Five focused AI tools for professionals — each with structured prompts and fully editable
-          output, so you stay in control of what leaves your desk.
+          Five focused AI tools for our kitchen team — structured prompts and fully editable output,
+          so a human always signs off before anything leaves the kitchen.
         </p>
         <Link
           to="/email"
