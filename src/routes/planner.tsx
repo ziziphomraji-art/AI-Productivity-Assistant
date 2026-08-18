@@ -6,13 +6,13 @@ import { ToolWorkspace } from "@/components/ToolWorkspace";
 export const Route = createFileRoute("/planner")({
   head: () => ({
     meta: [
-      { title: "AI Task Planner — Workplace AI" },
+      { title: "AI Task Planner — Community Kitchen Soup" },
       {
         name: "description",
         content:
           "Break goals into prioritized, time-boxed task plans with AI and edit the plan to fit your week.",
       },
-      { property: "og:title", content: "AI Task Planner — Workplace AI" },
+      { property: "og:title", content: "AI Task Planner — Community Kitchen Soup" },
       {
         property: "og:description",
         content: "Turn a goal and a deadline into a prioritized, realistic task plan.",
